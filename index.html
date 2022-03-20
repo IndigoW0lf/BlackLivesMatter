@@ -8,6 +8,7 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   </head>
   <body>
+    
     <a-scene>
       <a-assets>
         <img id="floor" src="floor.png" />
@@ -18,6 +19,13 @@
       <a-sky src="#ceiling"></a-sky>
       <a-light type="ambient" color="#ffffff"></a-light>
       <a-light type="point" intensity="1" position="7 5 4"></a-light>
+      <a-entity
+        id="river"
+        geometry="primitive: plane"
+        material="color: blue"
+        position="-10 0 0"
+        sound="src: Dystopia.m4a; autoplay: true"
+      ></a-entity>
 
       <a-plane
         src="#floor"
@@ -54,7 +62,9 @@
         scale="0.6 0.6 0.6"
       >
         <a-text
-          value=" 3D sculpture.  Each sphere represents a black life lost due to police violence. Viewing the 99 spheres from six meters away, you see an image of a raised fist that represents unity and solidarity in the ongoing fight against racism."
+          value=" 3D sculpture.  Each sphere represents a black life lost due to police violence. 
+                 Viewing the 99 spheres from six meters away, you see an image of a raised fist that represents unity and 
+                 solidarity in the ongoing fight against racism."
           color="#000"
           position="0 -0.5 0"
           scale="0.6 0.6 0.6"
